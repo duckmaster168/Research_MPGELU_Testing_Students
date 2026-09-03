@@ -1,7 +1,7 @@
 # Research_MPGELU_Testing_Students
 Testing of MPGELU "Bounded Gradient Dynamics of Modified Parameterized GELU for Stable Optimization in Deep Convolutional Networks"
 
-📝 CREDITS: 
+📝 **CREDITS**: 
 De Los Santos, J. A. E., Reginales, M. D., Valmeo, C. J., & Bautista, E. (2026). Modified Parameterized Gaussian Error Linear Unit (MPGELU) Demonstration. GitHub. https://github.com/Ariestootl/MPGELU
 @software{delossantos2026mpgelu,
   author = {De Los Santos, Jose Aries E. and Reginales, Marion Dominic and Valmeo, Carl Jaeron and Bautista, Enzo},
@@ -13,7 +13,7 @@ De Los Santos, J. A. E., Reginales, M. D., Valmeo, C. J., & Bautista, E. (2026).
 }
 
 
-📝 Original Formulation:
+📝 **Original Formulation:**
 
 Pérez-Corral, C., Fernández-Hernández, A., Mestre, J. I., Dolz, M. F., & Quintana-Ortí, E. S. (2026). $\lambda$-GELU: Learning Gating Hardness for Controlled ReLU-ization in Deep Networks. arXiv preprint arXiv:2603.21991. https://arxiv.org/abs/2603.21991
 @misc{perezcorral2026lambdagelu,
@@ -27,7 +27,7 @@ Pérez-Corral, C., Fernández-Hernández, A., Mestre, J. I., Dolz, M. F., & Quin
 }
 
 
-📚 References
+📚 **References**:
 Agarap, A. F. (2018). Deep learning using rectified linear units (ReLU). arXiv. https://arxiv.org/abs/1803.08375
 Alkhouly, A. A., Mohammed, A., & Hefny, H. A. (2021). Improving the performance of deep neural networks using two proposed activation functions. IEEE Access. https://doi.org/10.1109/access.2021.3085855
 Apicella, A., Donnarumma, F., Isgrò, F., & Prevete, R. (2021). A survey on modern trainable activation functions. Neural Networks, 138, 14-32. https://doi.org/10.1016/j.neunet.2021.01.026
