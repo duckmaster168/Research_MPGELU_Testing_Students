@@ -16,6 +16,22 @@ class Trainer:
         self.device = device
         self.loss_steps = loss_steps
 
+    def _get_grad_norms(self):
+        """Extracts layer-wise L2 weight gradient norms directly from the model parameters."""
+        grad_norms = {}
+        for name, param in self.model.named_parameters():
+            if param.grad is not None and "weight" in name:
+                grad_norms[name] = param.grad.norm().item()
+        return grad_norms
+
+    def _get_lambdas(self):
+        """Extracts current lambda values directly from any custom activation layers in the model."""
+        lambdas = []
+        for module in self.model.modules():
+            if hasattr(module, 'get_lambda'):
+                lambdas.append(module.get_lambda())
+        return lambdas
+
     def train(self, data_loader: torch.utils.data.DataLoader, epoch=None):
         train_loss, train_acc = 0.0, 0.0
         self.model.train()
@@ -36,8 +52,9 @@ class Trainer:
         train_loss /= len(data_loader)
         train_acc /= len(data_loader)
         
-        grad_norms = self.model.get_layer_grad_norms() if hasattr(self.model, 'get_layer_grad_norms') else {}
-        lambdas = self.model.get_lambda_values() if hasattr(self.model, 'get_lambda_values') else []
+        # Capture metrics externally without altering MyCNN.py
+        grad_norms = self._get_grad_norms()
+        lambdas = self._get_lambdas()
 
         if epoch is not None and epoch % self.loss_steps == 0:
             print(f"Epoch {epoch:02d} | Train Loss: {train_loss:.5f} | Train Acc: {train_acc:.2f}%")
