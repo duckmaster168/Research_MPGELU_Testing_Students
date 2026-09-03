@@ -3,6 +3,8 @@ Testing of MPGELU "Bounded Gradient Dynamics of Modified Parameterized GELU for 
 
 📝 **CREDITS**: 
 De Los Santos, J. A. E., Reginales, M. D., Valmeo, C. J., & Bautista, E. (2026). Modified Parameterized Gaussian Error Linear Unit (MPGELU) Demonstration. GitHub. https://github.com/Ariestootl/MPGELU
+
+BibTex:
 @software{delossantos2026mpgelu,
   author = {De Los Santos, Jose Aries E. and Reginales, Marion Dominic and Valmeo, Carl Jaeron and Bautista, Enzo},
   title = {Modified Parameterized Gaussian Error Linear Unit (MPGELU) Demonstration},
@@ -17,6 +19,8 @@ De Los Santos, J. A. E., Reginales, M. D., Valmeo, C. J., & Bautista, E. (2026).
 
 Pérez-Corral, C., Fernández-Hernández, A., Mestre, J. I., Dolz, M. F., & Quintana-Ortí, E. S. (2026). $\lambda$-GELU: Learning Gating Hardness for Controlled ReLU-ization in Deep Networks. arXiv preprint arXiv:2603.21991. https://arxiv.org/abs/2603.21991
 @misc{perezcorral2026lambdagelu,
+
+BibTex:
       title={$\lambda$-GELU: Learning Gating Hardness for Controlled ReLU-ization in Deep Networks}, 
       author={Cristian P{\'e}rez-Corral and Alberto Fern{\'a}ndez-Hern{\'a}ndez and Jose I. Mestre and Manuel F. Dolz and Enrique S. Quintana-Ort{\'i}},
       year={2026},
